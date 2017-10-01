@@ -8,20 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		8764CE841F805AAE00594AC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8764CE831F805AAE00594AC8 /* AppDelegate.swift */; };
-		8764CE861F805AAE00594AC8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8764CE851F805AAE00594AC8 /* ViewController.swift */; };
+		8764CE861F805AAE00594AC8 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8764CE851F805AAE00594AC8 /* MainVC.swift */; };
 		8764CE891F805AAE00594AC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8764CE871F805AAE00594AC8 /* Main.storyboard */; };
 		8764CE8B1F805AAE00594AC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8764CE8A1F805AAE00594AC8 /* Assets.xcassets */; };
 		8764CE8E1F805AAE00594AC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8764CE8C1F805AAE00594AC8 /* LaunchScreen.storyboard */; };
+		876DB11E1F806E5000124915 /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DB11D1F806E5000124915 /* VideoVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8764CE801F805AAE00594AC8 /* PartyRockApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PartyRockApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8764CE831F805AAE00594AC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8764CE851F805AAE00594AC8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8764CE851F805AAE00594AC8 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		8764CE881F805AAE00594AC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8764CE8A1F805AAE00594AC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8764CE8D1F805AAE00594AC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8764CE8F1F805AAE00594AC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		876DB11B1F806ADF00124915 /* Autobus-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Autobus-Bold.ttf"; sourceTree = "<group>"; };
+		876DB11D1F806E5000124915 /* VideoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +57,48 @@
 		8764CE821F805AAE00594AC8 /* PartyRockApp */ = {
 			isa = PBXGroup;
 			children = (
+				876DB11C1F806AF800124915 /* Files */,
+				8764CE981F805C0300594AC8 /* Model */,
+				8764CE971F805BFF00594AC8 /* View */,
+				8764CE951F805B8500594AC8 /* Controller */,
 				8764CE831F805AAE00594AC8 /* AppDelegate.swift */,
-				8764CE851F805AAE00594AC8 /* ViewController.swift */,
 				8764CE871F805AAE00594AC8 /* Main.storyboard */,
-				8764CE8A1F805AAE00594AC8 /* Assets.xcassets */,
 				8764CE8C1F805AAE00594AC8 /* LaunchScreen.storyboard */,
+				8764CE8A1F805AAE00594AC8 /* Assets.xcassets */,
 				8764CE8F1F805AAE00594AC8 /* Info.plist */,
 			);
 			path = PartyRockApp;
+			sourceTree = "<group>";
+		};
+		8764CE951F805B8500594AC8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8764CE851F805AAE00594AC8 /* MainVC.swift */,
+				876DB11D1F806E5000124915 /* VideoVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8764CE971F805BFF00594AC8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8764CE981F805C0300594AC8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		876DB11C1F806AF800124915 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				876DB11B1F806ADF00124915 /* Autobus-Bold.ttf */,
+			);
+			path = Files;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +173,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8764CE861F805AAE00594AC8 /* ViewController.swift in Sources */,
+				876DB11E1F806E5000124915 /* VideoVC.swift in Sources */,
+				8764CE861F805AAE00594AC8 /* MainVC.swift in Sources */,
 				8764CE841F805AAE00594AC8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
