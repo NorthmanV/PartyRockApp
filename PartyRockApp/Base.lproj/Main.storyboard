@@ -158,15 +158,28 @@
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YBe-41-drF">
+                                <rect key="frame" x="16" y="322.5" width="343" height="22"/>
+                                <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="q6D-ZT-pUL" firstAttribute="leading" secondItem="qzQ-Lg-PS1" secondAttribute="leading" id="QKJ-7y-Wh7"/>
+                            <constraint firstItem="YBe-41-drF" firstAttribute="leading" secondItem="qzQ-Lg-PS1" secondAttribute="leading" constant="16" id="bNl-HV-AzW"/>
+                            <constraint firstItem="YBe-41-drF" firstAttribute="centerY" secondItem="0E9-wV-o3D" secondAttribute="centerY" id="cbQ-fj-BgD"/>
                             <constraint firstItem="q6D-ZT-pUL" firstAttribute="top" secondItem="0E9-wV-o3D" secondAttribute="top" id="hBX-5N-fvP"/>
+                            <constraint firstItem="qzQ-Lg-PS1" firstAttribute="trailing" secondItem="YBe-41-drF" secondAttribute="trailing" constant="16" id="j5t-zj-Ow3"/>
                             <constraint firstItem="q6D-ZT-pUL" firstAttribute="trailing" secondItem="qzQ-Lg-PS1" secondAttribute="trailing" id="jqc-i5-C0W"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qzQ-Lg-PS1"/>
                     </view>
+                    <connections>
+                        <outlet property="titleLabel" destination="YBe-41-drF" id="XPa-vF-TDB"/>
+                        <outlet property="webView" destination="q6D-ZT-pUL" id="XDy-jb-7ld"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8d4-KO-8FV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
