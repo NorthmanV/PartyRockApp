@@ -21,7 +21,7 @@
         <!--MainVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainVC" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="PartyRockApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -75,7 +75,7 @@
                                 <rect key="frame" x="0.0" y="150" width="375" height="517"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="Q41-cu-uNo">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PartyCell" rowHeight="80" id="Q41-cu-uNo" customClass="PartyCell" customModule="PartyRockApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Q41-cu-uNo" id="uP8-fI-EFl">
@@ -94,7 +94,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="37" id="ez2-X9-YQc"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="24"/>
+                                                    <fontDescription key="fontDescription" name="AutobusBold" family="Autobus Bold" pointSize="18"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -107,6 +107,10 @@
                                                 <constraint firstItem="IeB-ac-kPJ" firstAttribute="centerY" secondItem="uP8-fI-EFl" secondAttribute="centerY" id="vri-o5-9Jp"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="videoPreviewImage" destination="cFE-z6-LQk" id="72N-Od-Ia2"/>
+                                            <outlet property="videoTitle" destination="IeB-ac-kPJ" id="UM6-A6-gCn"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -127,6 +131,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="tableView" destination="kZa-cH-qjn" id="EWa-hk-RgH"/>
                         <segue destination="qe1-zW-BU4" kind="showDetail" identifier="VideoVC" id="GmT-aP-eH8"/>
                     </connections>
                 </viewController>
